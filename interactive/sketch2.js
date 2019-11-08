@@ -99,6 +99,16 @@ d3.json("finalImages_turkey.json").then(data => {
 
 // // build chart
 function buildChart(data) {
+  //Scales (areaScale= for inside the circle (maps the saturation of color) and along the circumferance of the circle (maps the hue))
+  //   var areaScale = d3.scale
+  //     .linear()
+  //     .domain(["0", "100"])
+  //     .range(["0", 300]);
+  //   var xScale = d3.scale
+  //     .radial()
+  //     .domain(["0", "360"])
+  //     .range(["0", 300]);
+
   var circles = svg
     .selectAll("circle")
     .data(data)
@@ -120,36 +130,3 @@ function buildChart(data) {
     .style("stroke", "white")
     .style("stroke-width", "1px");
 }
-//Scales (I need 2, the outercirle, and then the circle area)
-//   var areaScale = d3.scale
-//     .linear()
-//     .domain(["0", "100"])
-//     .range(["0", barHeight]);
-//   var xScale = d3.scale
-//     .radial()
-//     .domain(["0", "360"])
-//     .range(["0", -barHeight]);
-//create circles
-//   var circles = svg
-//     .selectAll("circle")
-//     .data(data)
-//     .enter()
-//     .append("a")
-//     .attr("xlink:href", function(d) {
-//       return d.image;
-//     })
-//     .attr("target", "_blank")
-//     .append("circles")
-//     // .attr("height", BLANK) //lightness (radius)
-//     // .attr("width", BLANK) //lightness (radius)
-//     // .attr("x", BLANK)
-//     // .attr("y", BLANK)
-//     .attr("cx", 1)
-//     .attr("cy", 2)
-//     .attr("r", d => {
-//       return colorConverter(d.color[0], d.color[1], d.color[2])[2];
-//     })
-//     .attr("fill", d => {
-//       return d3.rgb(d.color[0], d.color[1], d.color[2]);
-//     }); // color of cirle,
-// }

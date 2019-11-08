@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Untitled</title>
+    <!-- <script src="libraries/p5.js" type="text/javascript"></script> -->
+
+    <!-- <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: #757232;
+      }
+     
+
+    #title {
+      padding: 0.1px 9px 0.1px;
+      position: absolute;
+      top: 30px;
+      left: 950px;
+      font-size: 25px;
+      font-family: cursive;
+
+    }
+    /* .xaxis {
+      color: white;
+
+    }
+
+    .yaxis{
+      color: white;
+    } */
+      .country-path {
+        fill: none;
+        /* stroke: blue; */
+        stroke-width: 1.5px;
+      }
+
+      #legend {
+        padding: 0.1px 9px 0.1px;
+        position: absolute;
+        /* box-shadow: rgba(0,0,0,.2) 0 0 4px 2px; */
+        top: 300px;
+        right: 250px;
+        z-index: 2000;
+        /* border: 2px solid;  */
+        background: none;
+        font-family: arial
+      } 
+
+      .legend-header {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .legend-feature1 {
+      display: inline-block;
+      background: #c520f7;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+
+    .legend-feature2 {
+    display: inline-block;
+    background:   #ff21b5;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+  }
+.legend-feature3 {
+  display: inline-block;
+  background: #00cf74;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+.legend-feature4 {
+  display: inline-block;
+  background:  #e81e28;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+.legend-feature5 {
+  display: inline-block;
+  background:  #6b8bcf;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+      .Egypt {
+        stroke: #c520f7;
+      }
+
+      .India {
+        stroke: #ff21b5;
+      }
+
+      .Iran {
+        stroke: #008f50;
+      }
+
+      .Turkey {
+        stroke: #d1c708;
+      }
+
+      .Syria {
+        stroke: #6b8bcf;
+      }
+    </style>
+  </head>
+  <body>
+      <div id= "title">
+          <p>
+            <strong>Where does the MET Islamic Art come from? </strong>
+          </p>
+        </div>
+      <div id="legend">
+          <div class="legend-header"></div>
+            <div>
+              <p>
+                <span class="legend-feature1"></span>  <strong>Egypt</strong>
+              </p>
+              <p>
+                <span class="legend-feature2"></span>  <strong>India</strong>
+              </p>
+              <p>
+                <span class="legend-feature3"></span>  <strong>Iran</strong>
+              </p>
+              <p>
+                  <span class="legend-feature4"></span>  <strong>Syria</strong>
+                </p>
+              <div>
+                <p>
+               <span class="legend-feature5"></span>  <strong>Turkey</strong>  
+              </p>
+              </div>
+               
+              </div> 
+
+    <script src="fetch_before1800.js" type="text/javascript"></script>
+  </body>
+</html>

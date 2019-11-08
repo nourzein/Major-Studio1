@@ -1,0 +1,146 @@
+[
+  {
+    "date": "1871-1880",
+    "Egypt": 2,
+    "India": "",
+    "Iran": 5,
+    "Syria": "",
+    "Turkey": 73,
+    "Grand Total": 80
+  },
+  {
+    "date": "1881-1890",
+    "Egypt": 1204,
+    "India": 3,
+    "Iran": 50,
+    "Syria": 2,
+    "Turkey": 8,
+    "Grand Total": 1267
+  },
+  {
+    "date": "1891-1900",
+    "Egypt": 34,
+    "India": 63,
+    "Iran": 198,
+    "Syria": 24,
+    "Turkey": 43,
+    "Grand Total": 362
+  },
+  {
+    "date": "1901-1910",
+    "Egypt": 1019,
+    "India": 57,
+    "Iran": 114,
+    "Syria": 116,
+    "Turkey": 82,
+    "Grand Total": 1388
+  },
+  {
+    "date": "1911-1920",
+    "Egypt": 325,
+    "India": 271,
+    "Iran": 410,
+    "Syria": 114,
+    "Turkey": 127,
+    "Grand Total": 1247
+  },
+  {
+    "date": "1921-1930",
+    "Egypt": 444,
+    "India": 140,
+    "Iran": 159,
+    "Syria": 35,
+    "Turkey": 110,
+    "Grand Total": 888
+  },
+  {
+    "date": "1931-1940",
+    "Egypt": 134,
+    "India": 24,
+    "Iran": 1985,
+    "Syria": 18,
+    "Turkey": 31,
+    "Grand Total": 2192
+  },
+  {
+    "date": "1941-1950",
+    "Egypt": 44,
+    "India": 147,
+    "Iran": 2342,
+    "Syria": 41,
+    "Turkey": 50,
+    "Grand Total": 2624
+  },
+  {
+    "date": "1951-1960",
+    "Egypt": 40,
+    "India": 84,
+    "Iran": 179,
+    "Syria": 34,
+    "Turkey": 56,
+    "Grand Total": 393
+  },
+  {
+    "date": "1961-1970",
+    "Egypt": 40,
+    "India": 30,
+    "Iran": 292,
+    "Syria": 23,
+    "Turkey": 66,
+    "Grand Total": 451
+  },
+  {
+    "date": "1971-1980",
+    "Egypt": 217,
+    "India": 42,
+    "Iran": 305,
+    "Syria": 21,
+    "Turkey": 99,
+    "Grand Total": 684
+  },
+  {
+    "date": "1981-1990",
+    "Egypt": 14,
+    "India": 73,
+    "Iran": 45,
+    "Syria": 2,
+    "Turkey": 30,
+    "Grand Total": 164
+  },
+  {
+    "date": "1991-2000",
+    "Egypt": 1,
+    "India": 38,
+    "Iran": 43,
+    "Syria": 8,
+    "Turkey": 16,
+    "Grand Total": 106
+  },
+  {
+    "date": "2001-2010",
+    "Egypt": 16,
+    "India": 53,
+    "Iran": 128,
+    "Syria": 8,
+    "Turkey": 64,
+    "Grand Total": 269
+  },
+  {
+    "date": "2011-2020",
+    "Egypt": 10,
+    "India": 74,
+    "Iran": 131,
+    "Syria": 2,
+    "Turkey": 35,
+    "Grand Total": 252
+  },
+  {
+    "date": "Grand Total",
+    "Egypt": 3544,
+    "India": 1099,
+    "Iran": 6386,
+    "Syria": 448,
+    "Turkey": 890,
+    "Grand Total": 12367
+  }
+]

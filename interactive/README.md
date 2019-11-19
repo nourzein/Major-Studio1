@@ -1,4 +1,5 @@
 #Color Wheel
+
 This is a color wheel were the hue, saturation, and lightness of the colors used in the European Paitings Deparment at the MET are analyzed.
 I first downloaded all the objects in the european department using "request" moduel in node and then used used colorthief to extract color and save it as another property of the objects. I used the colorthief server side version to do this.
 Then I used d3 to draw my visual.
@@ -9,4 +10,5 @@ The interactive parts included the tooltip to give more information on the paint
 I want to add a zoom feature in the future. I also want to try to make my "Anlaysis Takeaways" not really a text summary but show it in the visual.
 
 Inspiration
+
 http://www.geotests.net/couleurs/v2/#

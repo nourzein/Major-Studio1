@@ -31,7 +31,7 @@ function byDecendingDate(a, b) {
   return b.date - a.date;
 }
 
-d3.json("finalImages.json").then(data => {
+d3.json("finalImages_euro.json").then(data => {
   data.forEach((d, i) => (d.id = i));
   jsonData = data;
   //   console.log(data);

@@ -88,6 +88,7 @@ function addObject(objectData) {
   var imgUrl = objectData.primaryImage;
   var nationality = objectData.artistNationality;
   var country = objectData.country;
+  var name = objectData.artistDisplayName;
   var index = myArray.length;
   myArray[index] = {};
   myArray[index]["title"] = currentTitle;
@@ -95,7 +96,8 @@ function addObject(objectData) {
   myArray[index]["image"] = imgUrl;
   myArray[index]["nationality"] = nationality;
   myArray[index]["country"] = country;
-  // console.log(JSON.stringify(myArray));
+  myArray[index]["name"] = name;
+  console.log(JSON.stringify(myArray));
 }
 
 // // call the function for each element in the myObjectIds array

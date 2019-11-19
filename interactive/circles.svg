@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2880 2880" style="enable-background:new 0 0 2880 2880;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:none;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'PTSerif-Regular';}
+	.st5{font-size:14px;}
+</style>
+<circle class="st0" cx="389.84" cy="649.03" r="88.84"/>
+<circle class="st0" cx="390.74" cy="681.06" r="55.97"/>
+<line class="st1" x1="390.74" y1="737.03" x2="576.07" y2="737.03"/>
+<line class="st1" x1="390.74" y1="625.1" x2="576.16" y2="625.1"/>
+<line class="st1" x1="389.84" y1="560.19" x2="575.83" y2="560.19"/>
+<rect x="472.48" y="547.04" class="st2" width="116.07" height="16.8"/>
+<text transform="matrix(1 0 0 1 472.4779 557.5698)" class="st3 st4 st5">100% Saturation</text>
+<rect x="479.66" y="610.57" class="st2" width="116.07" height="16.8"/>
+<text transform="matrix(1 0 0 1 479.6562 621.0985)" class="st3 st4 st5">50% Saturation</text>
+<rect x="487.19" y="723.27" class="st2" width="116.07" height="16.8"/>
+<text transform="matrix(1 0 0 1 487.1935 733.7992)" class="st3 st4 st5">0% Saturation</text>
+<line class="st2" x1="651.83" y1="655.92" x2="651.83" y2="1377.36"/>
+</svg>

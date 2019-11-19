@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Qualitative_Assignment</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="./vibrant.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,500,900|Open+Sans|Source+Sans+Pro:900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script> -->
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: hsl(0, 0%, 0%);
+      }
+      p {
+        width: 500px;
+      }
+      /* #menu {
+              display: flex;
+              height: 150px;
+              right: 20px;
+              width: 50px;
+              height: 50px;
+              background: red;
+            } */
+      #sortbox {
+        /* padding: 0;
+              position: absolute;
+              top: 60px;
+              right: 20px; */
+
+        color: #e0e0e0;
+      }
+      #greynessLabel {
+        /* inputbox & label div */
+        /* position: absolute;
+              padding: 0;
+              top: 15px;
+              right: 10px; */
+        /* /margin-right: 30px; */
+        position: relative;
+        left: 1500px;
+        width: 100px;
+        height: 40px;
+        top: 3px;
+        font-size: 13px;
+        background: black;
+        font-family: "Source Sans Pro", sans-serif;
+        opacity: 1;
+        color: white;
+        font-weight: bolder;
+      }
+      #greyness {
+        /* inputbox */
+        /* position: relative;
+              padding: 0;
+              top: 5px;
+              right: 1; */
+        color: black;
+        width: 40px;
+        height: 40px;
+        margin-left: 30px;
+        border-radius: 50%;
+        position: relative;
+        left: 1480px;
+      }
+      /* #legend-header {
+              margin-bottom: 10px;
+              font-weight: bold;
+            } */
+
+      #title {
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 80px;
+
+        top: 45;
+        /* top: 2px; */
+        left: 45px;
+        font-size: 18px;
+        font-family: "Source Sans Pro", sans-serif;
+        /* background: black; */
+        /* background: black; */
+        opacity: 0.95;
+        color: #e0e0e0;
+        font-weight: bolder;
+        text-align: center;
+        /* text-shadow: 1px 1px 1px black, 0 0 0.8em #cbd4cc, 0 0 0.2em #5c2723; */
+      }
+
+      #legend {
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 100;
+        /* //position: absolute; */
+        top: 50px;
+        left: 50px;
+        font-size: 15px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-align: center;
+        color: #e0e0e0;
+        font-weight: 900;
+      }
+      /* h2 {
+        font-size: 18px;
+      } */
+      /* .sidebar {
+              background: black;
+              float: left;
+              height: 100%;
+              padding: 1px;
+              width: 30.5%;
+              position: absolute;
+              left: 5px;
+              text-align: center;
+              font-family: Arial;
+              overflow: auto;
+              color: #e0e0e0;
+              stroke: 70px;
+            } */
+
+      div.tooltip {
+        position: absolute;
+        width: 20ch;
+        font-family: georgia, garamond, serif;
+        font-size: 12px;
+        background: WhiteSmoke;
+        /* opacity: 1 !important; */
+        border: 0px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: 8px;
+        pointer-events: none;
+      }
+
+      .stats {
+        /* position: absolute; */
+        width: 250px;
+        height: 190px;
+        top: 70px;
+        right: 10px;
+        /* top: 650px; */
+        position: absolute;
+      }
+
+      /* .highlight {
+        opacity: 1;
+        stroke: white;
+        stroke-width: 0.7px;
+      }
+      /* .highlight:hover {
+        stroke-width: 2px;
+      } */
+
+      /* .dull {
+        opacity: 0;
+        /* stroke: white; */
+      /* stroke-width: 0.4px;
+      }  */
+
+      .bubble {
+        stroke: white;
+        stroke-width: 0.5px;
+      }
+      .bubble:hover {
+        stroke: red;
+        stroke-width: 2px;
+      }
+      #allBoxes {
+        position: absolute;
+        /* position: relative; */
+        font-size: 11px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <svg
+      id="scale"
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 2880 2880"
+      style="enable-background:new 0 0 2880 2880;"
+      xml:space="preserve"
+    >
+      <style type="text/css">
+        .st0 {
+          fill: black;
+          stroke: white;
+          stroke-miterlimit: 10;
+        }
+        .st1 {
+          fill: none;
+          stroke: white;
+          stroke-miterlimit: 10;
+        }
+        .st2 {
+          fill: none;
+        }
+        .st3 {
+          fill: #ffffff;
+        }
+        .st4 {
+          font-family: "PTSerif-Regular";
+        }
+        .st5 {
+          font-size: 14px;
+        }
+      </style>
+      <circle class="st0" cx="389.84" cy="649.03" r="88.84" />
+      <circle class="st0" cx="390.74" cy="681.06" r="55.97" />
+      <line class="st1" x1="390.74" y1="737.03" x2="576.07" y2="737.03" />
+      <line class="st1" x1="390.74" y1="625.1" x2="576.16" y2="625.1" />
+      <line class="st1" x1="389.84" y1="560.19" x2="575.83" y2="560.19" />
+      <rect x="472.48" y="547.04" class="st2" width="116.07" height="16.8" />
+      <text transform="matrix(1 0 0 1 472.4779 557.5698)" class="st3 st4 st5">
+        100% Saturation
+      </text>
+      <rect x="479.66" y="610.57" class="st2" width="116.07" height="16.8" />
+      <text transform="matrix(1 0 0 1 479.6562 621.0985)" class="st3 st4 st5">
+        50% Saturation
+      </text>
+      <rect x="487.19" y="723.27" class="st2" width="116.07" height="16.8" />
+      <text transform="matrix(1 0 0 1 487.1935 733.7992)" class="st3 st4 st5">
+        0% Saturation
+      </text>
+      <line class="st2" x1="651.83" y1="655.92" x2="651.83" y2="1377.36" />
+    </svg> -->
+    <!-- <div id="menu"> -->
+    <!-- <<select id="sortbox">
+        <option value="data"> Sort by </option>
+        <option value="dataDescending" style="background:#5F4690"
+          >Decending</option
+        >
+        <option value="dateAscending" style="background:#1D6996"
+          >Acending</option
+        >
+        <option value="color" style="background:#38A6A5">Colors</option>
+      </select> -->
+
+    <!-- <label id="greynessLabel" for="greyness">Remove Grey</label>
+      <input id="greyness" type="number" value="25" />
+    </div> -->
+    <!-- <div id="menu"> -->
+    <!-- <<select id="sortbox">
+        <option value="data"> Sort by </option>
+        <option value="dataDescending" style="background:#5F4690"
+          >Decending</option
+        >
+        <option value="dateAscending" style="background:#1D6996"
+          >Acending</option
+        >
+        <option value="color" style="background:#38A6A5">Colors</option>
+      </select> -->
+
+    <!-- <label id="greynessLabel" for="greyness">Remove Grey</label>
+      <input id="greyness" type="number" value="25" />
+    </div> -->
+
+    <div id="title">
+      <strong>A Color Analysis of European Paintings Across Time</strong>
+      <br />
+      <!-- <div id="title">
+        <p>
+          <strong>A Color Analysis of Islamic Carpet Weaving</strong>
+        </p>
+      </div> -->
+
+      <div id="legend">
+        The dominant color of each painting in the European Paintings Department
+        (over 2,000 painitngs from 1200-1900)<span id="count"></span>
+      </div>
+    </div>
+    <!-- <img src="barChart1.png" alt="Bar Chart" class="stats" /> -->
+    <div id="allBoxes">
+      <input
+        type="checkbox"
+        class="checkbox"
+        value="Medieval-Gothic"
+        checked
+      /><label>Medieval Gothic</label>
+      <br />
+      <input
+        type="checkbox"
+        class="checkbox"
+        value="Italian-Renaissance"
+        checked
+      /><label>Italian Renaissance</label>
+      <br />
+      <input
+        type="checkbox"
+        class="checkbox"
+        value="Northern-Renaissance"
+        checked
+      /><label>Northern Renaissance</label>
+      <br />
+      <input type="checkbox" class="checkbox" value="Mannerism" checked /><label
+        >Mannerism</label
+      >
+      <br />
+      <input type="checkbox" class="checkbox" value="Baroque" checked /><label
+        >Baroque</label
+      >
+      <br />
+      <input type="checkbox" class="checkbox" value="Rococo" checked /><label
+        >Rococo</label
+      >
+      <br />
+      <input
+        type="checkbox"
+        class="checkbox"
+        value="Neoclassicism"
+        checked
+      /><label>Neoclassicism</label>
+      <br />
+      <input
+        type="checkbox"
+        class="checkbox"
+        value="Romanticism"
+        checked
+      /><label>Romanticism</label>
+      <br />
+      <input type="checkbox" class="checkbox" value="Realism" checked /><label
+        >Realism</label
+      >
+      <br />
+      <input type="checkbox" class="checkbox" value="Modernism" checked /><label
+        >Modern Art</label
+      >
+    </div>
+
+    <!-- <div id="mydiv"></div> -->
+  </body>
+  <!-- <script>
+    var image = document.querySelector("img");
+    image.onload = function() {
+      var colorThief = new ColorThief();
+      var color = colorThief.getColor(image);
+    };
+  </script> -->
+  <!-- <script type="module" src="app.js"></script> -->
+  <script src="sketch2.js"></script>
+</html>

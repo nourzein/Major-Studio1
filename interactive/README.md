@@ -1,4 +1,4 @@
-#Color Wheel
+# Color Wheel
 
 This is a color wheel were the hue, saturation, and lightness of the colors used in the European Paitings Deparment at the MET are analyzed.
 I first downloaded all the objects in the european department using "request" moduel in node and then used used colorthief to extract color and save it as another property of the objects. I used the colorthief server side version to do this.

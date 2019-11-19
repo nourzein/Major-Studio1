@@ -1,5 +1,5 @@
-const width = window.innerWidth * 0.99;
-const height = window.innerHeight * 0.99;
+const width = window.innerWidth;
+const height = window.innerHeight;
 let hue;
 let sat;
 let lightness;

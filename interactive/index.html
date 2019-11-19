@@ -8,7 +8,7 @@
     <!-- <script src="./vibrant.js"></script> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,500,900|Open+Sans|Source+Sans+Pro:900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:900&display=swap"
       rel="stylesheet"
     />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script> -->
@@ -16,140 +16,311 @@
       body {
         padding: 0;
         margin: 0;
-        background: black;
+        background: hsl(0, 0%, 0%);
       }
-      p {
-        width: 500px;
-      }
-      /* #menu {
-        display: flex;
-        height: 150px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        background: red;
-      } */
-      #sortbox {
-        /* padding: 0;
+
+      #intro {
+        height: 80px;
+        width: 380px;
+        left: 20px;
         position: absolute;
-        top: 60px;
-        right: 20px; */
-
-        color: #e0e0e0;
+        top: 0;
       }
-      #greynessLabel {
-        /* inputbox & label div */
-        /* position: absolute;
-        padding: 0;
-        top: 15px;
-        right: 10px; */
-        /* /margin-right: 30px; */
-        position: relative;
-        left: 1500px;
-        width: 100px;
-        height: 40px;
-        top: 3px;
-        font-size: 13px;
-        background: black;
-        font-family: "Source Sans Pro", sans-serif;
-        opacity: 1;
-        color: white;
-        font-weight: bolder;
-      }
-      #greyness {
-        /* inputbox */
-        /* position: relative;
-        padding: 0;
-        top: 5px;
-        right: 1; */
-        color: black;
-        width: 40px;
-        height: 40px;
-        margin-left: 30px;
-        border-radius: 50%;
-        position: relative;
-        left: 1480px;
-      }
-      /* #legend-header {
-        margin-bottom: 10px;
-        font-weight: bold;
-      } */
-
       #title {
         padding: 0;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        /* top: 45; */
         /* top: 2px; */
-        left: 45px;
-        font-size: 26px;
-        font-family: "Source Sans Pro", sans-serif;
+
+        left: 40px;
+        font-size: 22px;
+        font-family: "Cormorant Garamond", serif;
         /* background: black; */
         /* background: black; */
         opacity: 0.95;
         color: #e0e0e0;
-        font-weight: bolder;
+        font-weight: 900px;
+        text-align: left;
+        border-bottom: 1px solid white;
+        width: 340px;
+
         /* text-shadow: 1px 1px 1px black, 0 0 0.8em #cbd4cc, 0 0 0.2em #5c2723; */
       }
 
       #legend {
         padding: 0;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 20px;
+        /* padding-bottom: 10px; */
+        width: 340px;
         /* //position: absolute; */
-        top: 50px;
+        /* top: 50px; */
         left: 50px;
-        font-size: 22px;
-        font-family: "Source Sans Pro", sans-serif;
-
+        font-size: 14px;
+        font-family: "Cormorant Garamond", serif;
+        text-align: left;
         color: #e0e0e0;
-        font-weight: 900;
+        /* font-weight: 600; */
+        /* border-bottom: 2px solid white; */
+      }
+      #checkLabel {
+        font-size: 14px;
+        color: white;
+        font-family: "Cormorant Garamond", serif;
+        left: 20px;
+        top: 200px;
+        position: absolute;
+        /* border-bottom: 1px solid white; */
+        /* padding-bottom: 4px; */
+        width: 340px
+      }
+      /* #checkLabelP {
+        margin-block-end: 0;
+      } */
+
+      #allBoxes {
+        position: absolute;
+        /* position: relative; */
+        font-size: 14px;
+        color: white;
+        top: 330px;
+        font-family: "Cormorant Garamond", serif;
+        left: 60px;
+        padding-bottom: 10px;
+        /* border-bottom: 2px solid white; */
+      }
+      /* #legendBorder {
+              box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px 2px;
+              border: 2px solid;
+              /* background: none; */
+      /* width: 350px;
+              height: 210px;
+              top: 650px;
+              left: 1150px;
+              position: absolute;
+              /* z-index: 1000; */
+      /* } */
+      .stats {
+        /* position: absolute; */
+        width: 280px;
+        height: 170px;
+        top: 700px;
+        left: 1220px; 
+        /* left: 10px; */
+        position: absolute;
+        border: 1px solid black;
+        box-shadow: rgba(255, 255, 255, 0.3) 0 0 4px 2px;
+      }
+      #takeaways {
+        font-size: 14px;
+        color: white;
+        font-family: "Cormorant Garamond", serif;
+        left: 20px; 
+         top: 580px;
+        /* top: 520px; */
+        /* left: 1190px;  */
+        position: absolute;
+        width:360px;
+      }
+      #takeawaysTitle {
+        /* border-bottom: 1px solid white; */
+        font-style: italic;
+      }
+
+      ul {
+  list-style-type: circle;
+}
+
+
+      /* .sidebar {
+                    background: black;
+                    float: left;
+                    height: 100%;
+                    padding: 1px;
+                    width: 30.5%;
+                    position: absolute;
+                    left: 5px;
+                    text-align: center;
+                    font-family: Arial;
+                    overflow: auto;
+                    color: #e0e0e0;
+                    stroke: 70px;
+                  } */
+      .sidenav {
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 300px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: 0; /* Black */
+        /* overflow-x: hidden; Disable horizontal scroll */
+        padding-top: 20px;
       }
 
       div.tooltip {
         position: absolute;
         width: 20ch;
-        font-family: georgia, garamond, serif;
+        font-family: "Cormorant Garamond", serif;
         font-size: 12px;
         background: WhiteSmoke;
-        opacity: 1 !important;
+        /* opacity: 1 !important; */
         border: 0px;
         border-radius: 20px;
         padding: 10px;
         margin-left: 8px;
         pointer-events: none;
       }
+
+      #total {
+        font-family: "Cormorant Garamond", serif;
+        text-align: left;
+        font-size: 20px;
+        color: #e0e0e0;
+        right: 20px;
+        position: absolute;
+        top: 5px;
+      }
+      /* .highlight {
+              opacity: 1;
+              stroke: white;
+              stroke-width: 0.7px;
+            }
+            /* .highlight:hover {
+              stroke-width: 2px;
+            } */
+
+      /* .dull {
+              opacity: 0;
+              /* stroke: white; */
+      /* stroke-width: 0.4px;
+            }  */
+
+      .bubble {
+        stroke: white;
+        stroke-width: 0.5px;
+      }
+      .bubble:hover {
+        stroke: red;
+        stroke-width: 2px;
+      }
+      
     </style>
   </head>
   <body>
-    <div id="menu">
-      <!-- <<select id="sortbox">
-        <option value="data"> Sort by </option>
-        <option value="dataDescending" style="background:#5F4690"
-          >Decending</option
-        >
-        <option value="dateAscending" style="background:#1D6996"
-          >Acending</option
-        >
-        <option value="color" style="background:#38A6A5">Colors</option>
-      </select> -->
+    <div class="sidenav">
+      <div id="intro">
+        <p id="title">
+          The Rich History of Color in Europe
+        </p>
+        <!-- <br/> -->
+        <!-- <div id="title">
+        <p>
+          <strong>A Color Analysis of Islamic Carpet Weaving</strong>
+        </p>
+      </div> -->
 
-      <label id="greynessLabel" for="greyness">Remove Grey</label>
-      <input id="greyness" type="number" value="25" />
+        <div id="legend">
+          After the Fall of Rome in 450, Europe plunged into the Dark Ages, experiencing four centuries of cultural and artistic stagnation where classical painting and color development were halted. <br>However, a glorious resurrection happened around the 11th century. 
+          
+        </div>
+      </div>
+      <div id="checkLabel">
+        <p id="checkLabelP">
+            This is a color analysis of the MET's European Paintings Collection by
+            artistic movement (from 1200-1900). <br>
+             Explore each art movement seperately to see the evolution of color
+          usage.
+        </p>
+      </div>
+      <div id="legendBorder">
+        <img src="legend.png" alt="legend" class="stats" />
+      </div>
+      <div id="allBoxes">
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Medieval-Gothic"
+          checked
+        /><label>Medieval Gothic</label>
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Italian-Renaissance"
+          checked
+        /><label>Italian Renaissance</label>
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Northern-Renaissance"
+          checked
+        /><label>Northern Renaissance</label>
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Mannerism"
+          checked
+        /><label>Mannerism</label>
+        <br />
+        <input type="checkbox" class="checkbox" value="Baroque" checked /><label
+          >Baroque</label
+        >
+        <br />
+        <input type="checkbox" class="checkbox" value="Rococo" checked /><label
+          >Rococo</label
+        >
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Neoclassicism"
+          checked
+        /><label>Neoclassicism</label>
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Romanticism"
+          checked
+        /><label>Romanticism</label>
+        <br />
+        <input type="checkbox" class="checkbox" value="Realism" checked /><label
+          >Realism</label
+        >
+        <br />
+        <input
+          type="checkbox"
+          class="checkbox"
+          value="Modernism"
+          checked
+        /><label>Modern Art</label>
+      </div>
     </div>
-    <div id="title">
+    <div id="total">
+      <p><span id="count"></span> Total Paintings</p>
+    </div>
+    <div id="takeaways">
+      <p id="takeawaysTitle">
+        Analysis Takeaways
+      </p>
       <p>
-        <strong>A Color Analysis of Islamic Carpet Weaving</strong>
+          <ul >
+              <li><span style="color: #ed0000"> Red</span> and reddish shades of <span style="color: #802312"> Brown</span> were among the first colors used in Europe (brought from Asia through trade).</li>
+              <li><span style="color: #ed0000"> Red</span> continued to remain the most dominant color used throughout the centuries along with <span style="color: #ff5500"> Orange</span> . It was cheap and widely accessible.</li>
+              <li>During the Renaissance period, oil painting was established allowing artists more innovation in painting techniques, and as a consequence, subject matter. We see first signs of <span style="color: #ffe854"> Yellow </span> and <span style="color: #2dc200"> Green </span>. </li>
+           <li>
+              Periods with nature-based paintings (ex: Rococo and Romanticism) show predominant use of <span style="color: #2dc200"> Green </span> (along with red).
+           </li>
+           <li> 
+              Although there were signs of blue early on, <span style="color: #2b24ff"> Blue </span>only became popular in the 18th century because before then it was very expensive. 
+           </li>
+            </ul>
       </p>
     </div>
-
-    <div id="legend">
-      <p>
-        The dominant color of each carpet in the Islamic Art Department from
-        1400-1800, divided by the three prominant dynasties in the region.
-        (<span id="count"></span> paintings).
-      </p>
-    </div>
-
     <!-- <div id="mydiv"></div> -->
   </body>
   <!-- <script>
@@ -160,5 +331,5 @@
     };
   </script> -->
   <!-- <script type="module" src="app.js"></script> -->
-  <script src="sketch_all.js"></script>
+  <script src="sketch.js"></script>
 </html>

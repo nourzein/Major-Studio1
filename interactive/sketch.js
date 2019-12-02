@@ -1,11 +1,19 @@
-const width = window.innerWidth * 0.98;
-const height = window.innerHeight * 0.99;
+const width = window.innerWidth;
+const height = window.innerHeight;
 let hue;
 let sat;
 let lightness;
 
-const size = 865;
-const size_inner = 840;
+var size, size_inner, circleSize;
+if (width < 850) {
+  size = width * 0.9;
+  size_inner = width * 0.9 - 30;
+  circleSize = 1;
+} else {
+  size = height * 0.9;
+  size_inner = height * 0.9 - 30;
+  circleSize = 1.5;
+}
 const bands = 1;
 const band_width = (size - size_inner) / bands;
 const min_opacity = 0.1;
@@ -55,6 +63,11 @@ function colorConverter(r, g, b) {
   lightness = l;
   return [h, s, l];
 }
+var sizeB = (size - band_width) / 2;
+var biggest = ((size - band_width) / 2) * 0.75;
+var secondB = ((size - band_width) / 2) * 0.5;
+var small = ((size - band_width) / 2) * 0.25;
+console.log(size, biggest);
 
 //circle coordinates
 function getCircleX(radians, radius) {
@@ -64,22 +77,24 @@ function getCircleY(radians, radius) {
   return Math.sin((radians * Math.PI) / 180) * radius;
 }
 function getRadius(r) {
-  return r * 4.4;
+  return (r * sizeB) / 100;
 }
 
 var dataset = [
-  [450, 0, 0, "white"],
-  [330, 0, 0.5, "white"],
-  [230, 0, 0.5, "white"],
-  [130, 0, 0.3, "white"]
+  [sizeB, 0, 0, "white"],
+  [biggest, 0, 0.5, "white"],
+  [secondB, 0, 0.5, "white"],
+  [small, 0, 0.3, "white"]
 ];
+
 const svg = d3
   .select("body")
   .append("svg")
+  // .attr("viewBox", [0, 0, width, height])
   .attr("width", width)
   .attr("height", height)
   .append("g")
-  .attr("transform", "translate(" + width / 1.75 + "," + height / 2 + ")");
+  .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 //Create the wheelCopy (code credit: https://www.essycode.com/posts/create-color-wheel-javascript-d3/)
 for (let k = 0; k < bands; k++) {
@@ -121,7 +136,7 @@ var circle = svg
   .attr("cx", d => d[1])
   .attr("cy", d => d[1])
   .style("fill", "none")
-  .style("stroke", "white")
+  .style("stroke", d => d[3])
   .style("stroke-width", d => d[2]);
 
 var dataset2 = [
@@ -320,7 +335,7 @@ function buildChart(data) {
               return (
                 Math.sqrt(
                   colorConverter(d.color[0], d.color[1], d.color[2])[1]
-                ) * 1.7
+                ) * circleSize
               );
             }
           );

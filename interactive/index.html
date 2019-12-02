@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Qualitative_Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <!-- <script src="./vibrant.js"></script> -->
@@ -11,204 +14,15 @@
       href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:900&display=swap"
       rel="stylesheet"
     />
+
+  <link rel="stylesheet" href="style.css">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script> -->
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        background: hsl(0, 0%, 0%);
-      }
-
-      #intro {
-        height: 80px;
-        width: 380px;
-        left: 20px;
-        position: absolute;
-        top: 0;
-      }
-      #title {
-        padding: 0;
-        padding-top: 0;
-        padding-bottom: 5px;
-        margin-bottom: 0;
-        /* top: 45; */
-        /* top: 2px; */
-
-        left: 40px;
-        font-size: 22px;
-        font-family: "Cormorant Garamond", serif;
-        /* background: black; */
-        /* background: black; */
-        opacity: 0.95;
-        color: #e0e0e0;
-        font-weight: 900px;
-        text-align: left;
-        border-bottom: 1px solid white;
-        width: 340px;
-
-        /* text-shadow: 1px 1px 1px black, 0 0 0.8em #cbd4cc, 0 0 0.2em #5c2723; */
-      }
-
-      #legend {
-        padding: 0;
-        padding-top: 20px;
-        /* padding-bottom: 10px; */
-        width: 340px;
-        /* //position: absolute; */
-        /* top: 50px; */
-        left: 50px;
-        font-size: 14px;
-        font-family: "Cormorant Garamond", serif;
-        text-align: left;
-        color: #e0e0e0;
-        /* font-weight: 600; */
-        /* border-bottom: 2px solid white; */
-      }
-      #checkLabel {
-        font-size: 14px;
-        color: white;
-        font-family: "Cormorant Garamond", serif;
-        left: 20px;
-        top: 200px;
-        position: absolute;
-        /* border-bottom: 1px solid white; */
-        /* padding-bottom: 4px; */
-        width: 340px
-      }
-      /* #checkLabelP {
-        margin-block-end: 0;
-      } */
-
-      #allBoxes {
-        position: absolute;
-        /* position: relative; */
-        font-size: 14px;
-        color: white;
-        top: 330px;
-        font-family: "Cormorant Garamond", serif;
-        left: 60px;
-        padding-bottom: 10px;
-        /* border-bottom: 2px solid white; */
-      }
-      /* #legendBorder {
-              box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px 2px;
-              border: 2px solid;
-              /* background: none; */
-      /* width: 350px;
-              height: 210px;
-              top: 650px;
-              left: 1150px;
-              position: absolute;
-              /* z-index: 1000; */
-      /* } */
-      .stats {
-        /* position: absolute; */
-        width: 280px;
-        height: 170px;
-        top: 700px;
-        left: 1220px; 
-        /* left: 10px; */
-        position: absolute;
-        border: 1px solid black;
-        box-shadow: rgba(255, 255, 255, 0.3) 0 0 4px 2px;
-      }
-      #takeaways {
-        font-size: 14px;
-        color: white;
-        font-family: "Cormorant Garamond", serif;
-        left: 20px; 
-         top: 580px;
-        /* top: 520px; */
-        /* left: 1190px;  */
-        position: absolute;
-        width:360px;
-      }
-      #takeawaysTitle {
-        /* border-bottom: 1px solid white; */
-        font-style: italic;
-      }
-
-      ul {
-  list-style-type: circle;
-}
-
-
-      /* .sidebar {
-                    background: black;
-                    float: left;
-                    height: 100%;
-                    padding: 1px;
-                    width: 30.5%;
-                    position: absolute;
-                    left: 5px;
-                    text-align: center;
-                    font-family: Arial;
-                    overflow: auto;
-                    color: #e0e0e0;
-                    stroke: 70px;
-                  } */
-      .sidenav {
-        height: 100%; /* Full-height: remove this if you want "auto" height */
-        width: 300px; /* Set the width of the sidebar */
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        background-color: 0; /* Black */
-        /* overflow-x: hidden; Disable horizontal scroll */
-        padding-top: 20px;
-      }
-
-      div.tooltip {
-        position: absolute;
-        width: 20ch;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 12px;
-        background: WhiteSmoke;
-        /* opacity: 1 !important; */
-        border: 0px;
-        border-radius: 20px;
-        padding: 10px;
-        margin-left: 8px;
-        pointer-events: none;
-      }
-
-      #total {
-        font-family: "Cormorant Garamond", serif;
-        text-align: left;
-        font-size: 20px;
-        color: #e0e0e0;
-        right: 20px;
-        position: absolute;
-        top: 5px;
-      }
-      /* .highlight {
-              opacity: 1;
-              stroke: white;
-              stroke-width: 0.7px;
-            }
-            /* .highlight:hover {
-              stroke-width: 2px;
-            } */
-
-      /* .dull {
-              opacity: 0;
-              /* stroke: white; */
-      /* stroke-width: 0.4px;
-            }  */
-
-      .bubble {
-        stroke: white;
-        stroke-width: 0.5px;
-      }
-      .bubble:hover {
-        stroke: red;
-        stroke-width: 2px;
-      }
-      
-    </style>
+ 
   </head>
   <body>
+    <div id="graph">
+
+    </div>
     <div class="sidenav">
       <div id="intro">
         <p id="title">
@@ -235,9 +49,7 @@
         </p>
       </div>
       <div id="legendBorder">
-        <img src="legend.png" alt="legend" class="stats" />
-
-
+        <img src="legend.png" alt="legend" class="stats" width="18%"/>
       </div>
       <div id="allBoxes">
         <input
@@ -245,35 +57,35 @@
           class="checkbox"
           value="Medieval-Gothic"
           checked
-        /><label>Medieval Gothic</label>
+        /><label>Medieval Gothic <i>(1200-1430)</i></label>
         <br />
         <input
           type="checkbox"
-          class="checkbox"
+          class="checkbox" 
           value="Italian-Renaissance"
           checked
-        /><label>Italian Renaissance</label>
+        /><label>Italian Renaissance <i>(1430-1510)</i></label>
         <br />
         <input
           type="checkbox"
           class="checkbox"
           value="Northern-Renaissance"
           checked
-        /><label>Northern Renaissance</label>
+        /><label>Northern Renaissance <i>(1510-1550)</i></label>
         <br />
         <input
           type="checkbox"
           class="checkbox"
           value="Mannerism"
           checked
-        /><label>Mannerism</label>
+        /><label>Mannerism <i>(1550-1600)</i></label>
         <br />
         <input type="checkbox" class="checkbox" value="Baroque" checked /><label
-          >Baroque</label
+          >Baroque <i>(1600-1705)</i></label
         >
         <br />
         <input type="checkbox" class="checkbox" value="Rococo" checked /><label
-          >Rococo</label
+          >Rococo <i>(1705-1750)</i></label
         >
         <br />
         <input
@@ -281,17 +93,17 @@
           class="checkbox"
           value="Neoclassicism"
           checked
-        /><label>Neoclassicism</label>
+        /><label>Neoclassicism <i>(1750-1805)</i></label>
         <br />
         <input
           type="checkbox"
           class="checkbox"
           value="Romanticism"
           checked
-        /><label>Romanticism</label>
+        /><label>Romanticism <i>(1805-1850)</i></label>
         <br />
         <input type="checkbox" class="checkbox" value="Realism" checked /><label
-          >Realism</label
+          >Realism <i>(1850-1899)</i></label
         >
         <br />
         <input
@@ -299,7 +111,7 @@
           class="checkbox"
           value="Modernism"
           checked
-        /><label>Modern Art</label>
+        /><label>Modern Art <i>(1899-1920)</i></label>
       </div>
       <div id="takeaways">
         <p id="takeawaysTitle">

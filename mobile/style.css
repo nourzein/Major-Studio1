@@ -41,6 +41,10 @@ body {
   /* text-shadow: 1px 1px 1px black, 0 0 0.8em #cbd4cc, 0 0 0.2em #5c2723; */
 }
 
+.hypothesis {
+  display: none;
+}
+
 #legend {
   padding: 0;
   padding-top: 20px;
@@ -226,14 +230,29 @@ div.tooltip {
     width: auto;
     text-align: justify;
   }
+  .hypothesis {
+    display: unset;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    /* padding: 12px; */
+    margin-top: 30px;
+  }
+  .howTo {
+    text-align: center;
+    margin: 20px;
+    border-bottom: 1px solid white;
+    padding: 18px;
+  }
   #checkLabel {
     display: none;
   }
   .chapter {
     border-bottom: 1px solid white;
+    margin: 30px auto;
   }
   .sections {
-    margin: 12px auto;
+    margin: 8px auto;
     width: 95%;
   }
   .screenshotContainer {
@@ -244,7 +263,7 @@ div.tooltip {
   .header {
     color: white;
     text-align: center;
-    margin: 1em;
+    margin: 1.5em;
   }
   .description {
     color: white;
@@ -254,6 +273,11 @@ div.tooltip {
   }
   .renaissance {
     font-size: 1.2rem;
+  }
+
+  .final {
+    /* text-align: justify; */
+    font-size: 1.3rem;
   }
 
   .paintingContainer {

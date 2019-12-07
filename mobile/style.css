@@ -11,6 +11,9 @@ body {
 .mobileStuff {
   display: none;
 }
+.introImage {
+  display: none;
+}
 #intro {
   height: 80px;
   width: 380px;
@@ -65,7 +68,7 @@ body {
   color: white;
   font-family: "Cormorant Garamond", serif;
   left: 20px;
-  top: 200px;
+  top: 230px;
   position: absolute;
   /* border-bottom: 1px solid white; */
   /* padding-bottom: 4px; */
@@ -80,7 +83,7 @@ body {
   /* position: relative; */
   font-size: 14px;
   color: white;
-  top: 330px;
+  top: 340px;
   font-family: "Cormorant Garamond", serif;
   left: 60px;
   padding-bottom: 10px;
@@ -219,6 +222,7 @@ div.tooltip {
     padding: 12px;
   }
   .introImage {
+    display: unset;
     padding: 20px;
   }
   #title {
@@ -270,9 +274,9 @@ div.tooltip {
   }
   .description {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position: static;
-    text-align: center;
+    text-align: justify;
   }
   .renaissance {
     font-size: 1.2rem;

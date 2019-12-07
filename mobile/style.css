@@ -218,6 +218,9 @@ div.tooltip {
     width: auto;
     padding: 12px;
   }
+  .introImage {
+    padding: 20px;
+  }
   #title {
     font-size: 1.4rem;
     position: inherit;
@@ -234,7 +237,7 @@ div.tooltip {
     display: unset;
     color: white;
     font-size: 1rem;
-    text-align: left;
+    text-align: justify;
     /* padding: 12px; */
     margin-top: 30px;
   }

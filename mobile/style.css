@@ -222,8 +222,8 @@ div.tooltip {
     padding: 12px;
   }
   .introImage {
-    display: unset;
-    padding: 20px;
+    display: block;
+    padding-top: 20px;
   }
   #title {
     font-size: 1.4rem;

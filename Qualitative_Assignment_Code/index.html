@@ -23,6 +23,7 @@
       #menu {
         display: flex;
         height: 150px;
+        position: absolute;
       }
       #sortbox {
         /* padding: 0;
@@ -41,7 +42,7 @@
         margin-left: 30px;
         width: 100px;
         font-size: 13px;
-        background: white;
+        /* background: ; */
         font-family: "Source Sans Pro", sans-serif;
         opacity: 1;
         color: black;
@@ -67,6 +68,7 @@
         padding: 0;
         padding-top: 0;
         padding-bottom: 0;
+        position: absolute;
 
         /* top: 2px;
         left: 45px; */
@@ -86,7 +88,7 @@
         padding-bottom: 0;
         position: absolute;
         top: 55px;
-        left: 50px;
+        /* left: 50px; */
         font-size: 22px;
         font-family: "Source Sans Pro", sans-serif;
 
@@ -110,7 +112,7 @@
     </style>
   </head>
   <body>
-    <div id="menu">
+    <!-- <div id="menu">
       <select id="sortbox">
         <option value="data"> Sort by </option>
         <option value="dataDescending" style="background:#5F4690"
@@ -123,18 +125,17 @@
       </select>
       <label id="greynessLabel" for="greyness">Remove Grey</label>
       <input id="greyness" type="number" value="25" />
-    </div>
+    </div> -->
     <div id="title">
       <p>
         <strong>Evolution of Color in European Paintings </strong>
       </p>
-    </div>
-
-    <div id="legend">
-      <p>
-        The dominant color of each European painting in the MET collection
-        (<span id="count"></span> paintings) from 1200- 1800.
-      </p>
+      <div id="legend">
+        <p>
+          The dominant color of each European painting in the MET collection
+          (<span id="count"></span> paintings) from 1200- 1800.
+        </p>
+      </div>
     </div>
 
     <!-- <div id="mydiv"></div> -->

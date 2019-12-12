@@ -11,7 +11,7 @@ That the aquisition was affected by historical events and that most of the art p
 Process and Tools:
 I used the MET csv for this project, summerized the data into a smaller excell sheet and loaded that into d3 to create a line graph. See here for detailed process. LINK
 
-Final and Reflections:
+Final and Reflections (Quantitative Chapter):
 ![final_image](https://github.com/nourzein/Major-Studio1/blob/master/Quant_Assignment_Code/final_quant_project.png)
 There are spikes in the timeline, but there were connected more to the MET finances than historical events in the areas themselves. The top 5 countries in decending order are: Iran, Eygpt, India, Turkey, and Syria.
 For my inexperienced-3 weeks into the program-self, this looked like a great final piece. I had a big learning curve to overcome to use d3 to create the line graph and I almost did not make it work.
@@ -30,17 +30,18 @@ Process and Tools:
 I used the MET API this time not the csv because I wanted image Urls. I used node.js to download the images. I used colorthief to extract the dominant color of the paintings, and I used d3 for the visualization.
 
 Final and Reflections:
-Initial Rendition:
+Initial Rendition (Qualitative Chapter):
 ![initial_one](https://github.com/nourzein/Major-Studio1/blob/master/Qualitative_Assignment_Code/final_qualy.png)
 My goal was to create a painting of paintings while showing the evolution of color through time.
 This visual was hard to read, and did not do a good job of conveying the rich information that I extracted from the paintings. All you can conclude is that across time, neutral tones remained popular.
 
-Final Visualization: ADD LINK TO VIDEO
+Final Visualization (Interactive Chapter): ADD LINK TO VIDEO
+![interactive_final](https://github.com/nourzein/Major-Studio1/blob/master/interactive/final_interactive.png)
 
 I did not only show hue, but lightness and saturation as well that also differed with the different movements.
 The movements are separated interactively in this piece so you can explore them in greatly detail.
 And the final takeaways are presented.
 
-One Step Further: Accessibility and Responsiveness ADD LINK TO VIDEO
+One Step Further: Accessibility and Responsiveness (New Context Chapter) ADD LINK TO VIDEO
 I wanted this piece to be accessible on any device and it was not in this form since it relies on the full width of a desktop. So for my final chapter I focused on designing for mobile since it is the hardest dimensions to design for.
 For this, I used the scroll feature of mobile and turned the piece from an interactive exploratory visual to a more controlled storytelling experience where I take the viewer through the different movements one by one, with the takeaways and the examples shown together.

@@ -1,14 +1,15 @@
-# Color Wheel
+#Mobile Version
 
-This is a color wheel were the hue, saturation, and lightness of the colors used in the European Paitings Deparment at the MET are analyzed.
-I first downloaded all the objects in the european department using "request" moduel in node and then used used colorthief to extract color and save it as another property of the objects. I used the colorthief server side version to do this.
-Then I used d3 to draw my visual.
-I initially drew them as rectangles ordered through time- but that did not convey to much information other than neutral colors were popular throughout the period (interesting takeawy but not enough).
-Then I thought of ways to extract more information from the qualititave data I had (the dominant color in all the paintings).
-After a few trial and errors, I found that creating a color wheel to show the hue, but also saturation and lightness conveyed the most information possible for this dataset.
-The interactive parts included the tooltip to give more information on the painting, the artistic movement filters to give more information on movement and time, and the side "count" to keep track of how many circles there are to give an idea of the dataset you are looking at at any time since there is overlap.
-I want to add a zoom feature in the future. I also want to try to make my "Anlaysis Takeaways" not really a text summary but show it in the visual.
+This projects takes the interactive pieces and builds on it to make it more accesible to a wide range of devices.
 
-Inspiration
+The piece as is does a good job at conveying the rich information extracted from each paitning in the European department, however, it relies heavily on the width of the desktop and does not respond well to other screen sizes.
 
-http://www.geotests.net/couleurs/v2/#
+Therefore, I decied to focus on making it responsive.
+
+I changed the initial exploratory-interactive visualization
+
+![interactive](https://github.com/nourzein/Major-Studio1/blob/master/interactive/final_interactive.png)
+
+To create a controlled storytelling experience with each chapter presented seperately with the findings and examples.
+
+![mobile](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile.png)

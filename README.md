@@ -42,7 +42,7 @@ I did not only show hue, but lightness and saturation as well that also differed
 The movements are separated interactively in this piece so you can explore them in greatly detail.
 And the final takeaways are presented.
 
-One Step Further: Accessibility and Responsiveness (New Context Chapter) ADD
+One Step Further: Accessibility and Responsiveness (New Context Chapter)
 [![mobile_final](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile_video.png)](https://vimeo.com/user106195632/review/379106545/72b0ccc24f)
 
 I wanted this piece to be accessible on any device and it was not in this form since it relies on the full width of a desktop. So for my final chapter I focused on designing for mobile since it is the hardest dimensions to design for.

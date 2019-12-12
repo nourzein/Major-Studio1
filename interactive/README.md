@@ -1,4 +1,4 @@
-# Color Wheel
+# Interactive Assignment
 
 This is a color wheel were the hue, saturation, and lightness of the colors used in the European Paitings Deparment at the MET are analyzed.
 

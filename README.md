@@ -9,7 +9,7 @@ Hypothesis:
 That the aquisition was affected by historical events and that most of the art pieces will be coming from the great islamic empires, specifically Iran and Eygpt.
 
 Process and Tools:
-I used the MET csv for this project, summerized the data into a smaller excell sheet and loaded that into d3 to create a line graph. See here for detailed process. LINK
+I used the MET csv for this project, summerized the data into a smaller excell sheet and loaded that into d3 to create a line graph. See [here](https://github.com/nourzein/Major-Studio1/tree/master/Quantitative) for detailed process.
 
 Final and Reflections (Quantitative Chapter):
 ![final_image](https://github.com/nourzein/Major-Studio1/blob/master/Quant_Assignment_Code/final_quant_project.png)
@@ -27,7 +27,7 @@ Hypothesis:
 I am curious to see whether color use evolved with the styles, and whether this is a consequence of taste or technology.
 
 Process and Tools:
-I used the MET API this time not the csv because I wanted image Urls. I used node.js to download the images. I used colorthief to extract the dominant color of the paintings, and I used d3 for the visualization.
+I used the MET API this time not the csv because I wanted image Urls. I used node.js to download the images. I used colorthief to extract the dominant color of the paintings, and I used d3 for the visualization. See more [here](https://github.com/nourzein/Major-Studio1/tree/master/Qualitative), [here](https://github.com/nourzein/Major-Studio1/tree/master/interactive), and [here](https://github.com/nourzein/Major-Studio1/tree/master/mobile)
 
 Final and Reflections:
 Initial Rendition (Qualitative Chapter):

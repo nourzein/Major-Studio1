@@ -1,4 +1,4 @@
-#Mobile Version
+# Mobile Version
 
 This projects takes the interactive pieces and builds on it to make it more accesible to a wide range of devices.
 

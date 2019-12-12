@@ -6,7 +6,7 @@ My project focuses on the Islamic Art collect of the Met Museum.
 I was initially intrigued by the collection due to my cultural background, and then inspired by their article on the chronology of the Islamic World's empires and dynasties.
 I am interested in using a multi-line graph to show the amount of the artwork overtime by country, inclduing information of the type of artwork and era in which it comes from.
 The goal is to visualise information on the Islamic Art collection of the Met, and potentially cross reference it with important events in the countries during the aquisition.
-![islamic art line graph](https://github.com/nourzein/Major-Studio1/blob/master/Quant_Assignment_Code/Node_D3/islamic_art_line_graph.png)
+![islamic art line graph](https://github.com/nourzein/Major-Studio1/blob/master/Quantitative/Node_D3/islamic_art_line_graph.png)
 
 ## Execution Phase:
 
@@ -14,7 +14,7 @@ For this project, I was very set on using d3.js to graph my line. This is becaus
 
 Step 1: Explore the MET CSV and Organize the data
 This step was time consuming but straightforward. I broke down the MET CSV islamic art department into individual spreadsheets based on country. I then counted the country totals and worked with the top 5 because they were significantly larger than the rest.
-![country count csv](https://github.com/nourzein/Major-Studio1/blob/master/Quant_Assignment_Code/country_count.png)
+![country count csv](https://github.com/nourzein/Major-Studio1/blob/master/Quantitative/country_count.png)
 
 I then broke down the credit line variable to get the time of aquisition using the "Right, 4" fucntion in excel to get the last 4 digits in the cell.
 So now I have a csv with all my countries with the date of aquisition (see final.csv). I put that into d3!
@@ -54,4 +54,4 @@ Step 3: Style with HTML and CSS !
 
 Final Product:
 
-![final line graph](https://github.com/nourzein/Major-Studio1/blob/master/Quant_Assignment_Code/final_quant_project.png)
+![final line graph](https://github.com/nourzein/Major-Studio1/blob/master/Quantitative/final_quant_project.png)

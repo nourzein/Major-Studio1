@@ -31,11 +31,12 @@ I used the MET API this time not the csv because I wanted image Urls. I used nod
 
 Final and Reflections:
 Initial Rendition:
-![initial_one]https://github.com/nourzein/Major-Studio1/blob/master/Qualitative_Assignment_Code/final_qualy.png
+![initial_one](https://github.com/nourzein/Major-Studio1/blob/master/Qualitative_Assignment_Code/final_qualy.png)
 My goal was to create a painting of paintings while showing the evolution of color through time.
 This visual was hard to read, and did not do a good job of conveying the rich information that I extracted from the paintings. All you can conclude is that across time, neutral tones remained popular.
 
 Final Visualization: ADD LINK TO VIDEO
+
 I did not only show hue, but lightness and saturation as well that also differed with the different movements.
 The movements are separated interactively in this piece so you can explore them in greatly detail.
 And the final takeaways are presented.

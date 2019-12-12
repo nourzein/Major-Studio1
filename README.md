@@ -36,14 +36,14 @@ My goal was to create a painting of paintings while showing the evolution of col
 This visual was hard to read, and did not do a good job of conveying the rich information that I extracted from the paintings. All you can conclude is that across time, neutral tones remained popular.
 
 Final Visualization (Interactive Chapter):
-[![interactive_final](https://github.com/nourzein/Major-Studio1/blob/master/interactive/final_interactive.png)](https://vimeo.com/379102257)
+[![interactive_final](https://github.com/nourzein/Major-Studio1/blob/master/interactive/interactive_video.png)](https://vimeo.com/379102257)
 
 I did not only show hue, but lightness and saturation as well that also differed with the different movements.
 The movements are separated interactively in this piece so you can explore them in greatly detail.
 And the final takeaways are presented.
 
 One Step Further: Accessibility and Responsiveness (New Context Chapter) ADD
-[![mobile_final](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile.png)](https://vimeo.com/user106195632/review/379106545/72b0ccc24f)
+[![mobile_final](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile_video.png)](https://vimeo.com/user106195632/review/379106545/72b0ccc24f)
 
 I wanted this piece to be accessible on any device and it was not in this form since it relies on the full width of a desktop. So for my final chapter I focused on designing for mobile since it is the hardest dimensions to design for.
 For this, I used the scroll feature of mobile and turned the piece from an interactive exploratory visual to a more controlled storytelling experience where I take the viewer through the different movements one by one, with the takeaways and the examples shown together.

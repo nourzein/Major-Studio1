@@ -42,6 +42,8 @@ I did not only show hue, but lightness and saturation as well that also differed
 The movements are separated interactively in this piece so you can explore them in greatly detail.
 And the final takeaways are presented.
 
-One Step Further: Accessibility and Responsiveness (New Context Chapter) ADD LINK TO VIDEO
+One Step Further: Accessibility and Responsiveness (New Context Chapter) ADD
+![mobile_final](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile.png)
+LINK TO VIDEO
 I wanted this piece to be accessible on any device and it was not in this form since it relies on the full width of a desktop. So for my final chapter I focused on designing for mobile since it is the hardest dimensions to design for.
 For this, I used the scroll feature of mobile and turned the piece from an interactive exploratory visual to a more controlled storytelling experience where I take the viewer through the different movements one by one, with the takeaways and the examples shown together.

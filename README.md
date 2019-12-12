@@ -44,7 +44,7 @@ The movements are separated interactively in this piece so you can explore them 
 And the final takeaways are presented.
 
 One Step Further: Accessibility and Responsiveness (New Context Chapter) ADD
-![mobile_final](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile.png)
+[![mobile_final]](https://github.com/nourzein/Major-Studio1/blob/master/mobile/mobile.png)
 LINK TO VIDEO
 
 I wanted this piece to be accessible on any device and it was not in this form since it relies on the full width of a desktop. So for my final chapter I focused on designing for mobile since it is the hardest dimensions to design for.

@@ -6,11 +6,13 @@ I first downloaded all the objects in the european department using "request" mo
 
 Then I used d3 to draw my visual.
 
-###Prototype
+### Prototype
+
 I initially drew them as rectangles ordered through time- but that did not convey to much information other than neutral colors were popular throughout the period (interesting takeawy but not enough).
 ![rectangle](https://github.com/nourzein/Major-Studio1/blob/master/Qualitative/final_qualy.png)
 
-###Execution
+### Execution
+
 Then I thought of ways to extract more information from the qualititave data I had (the dominant color in all the paintings).
 After a few trial and errors, I found that creating a color wheel to show the hue, but also saturation and lightness conveyed the most information possible for this dataset.
 The interactive parts included the tooltip to give more information on the painting, the artistic movement filters to give more information on movement and time, and the side "count" to keep track of how many circles there are to give an idea of the dataset you are looking at at any time since there is overlap.
